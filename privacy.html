@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mazí — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #1a1a1a; background: #fff;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.25rem; }
+  .updated { color: #666; font-size: .9rem; margin-top: 0; }
+  code { background: #f0f0f0; padding: .1rem .3rem; border-radius: 3px; }
+  table { border-collapse: collapse; width: 100%; margin-top: .75rem; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid #e2e2e2; vertical-align: top; }
+  th { font-size: .85rem; text-transform: uppercase; letter-spacing: .04em; color: #555; }
+  a { color: #0d8478; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #121212; }
+    .updated { color: #999; }
+    code { background: #262626; }
+    th, td { border-bottom-color: #2e2e2e; }
+    th { color: #aaa; }
+    a { color: #3fd3c3; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Mazí — Privacy Policy</h1>
+<p class="updated">Last updated: 24 July 2026</p>
+
+<p>
+  Mazí is a shared organiser for one family or household: groceries, chores,
+  recipes, meal plans and a calendar. This policy explains exactly what the app
+  stores and why. It is deliberately short, because Mazí collects very little.
+</p>
+
+<h2>What we collect</h2>
+
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr>
+    <td>Email address and password</td>
+    <td>To create and sign in to your account. Passwords are stored only as a salted hash — we never see them.</td>
+  </tr>
+  <tr>
+    <td>Display name and chosen colour</td>
+    <td>So your household can tell who added or completed something.</td>
+  </tr>
+  <tr>
+    <td>Content you enter: grocery items, chores, recipes, meal plans, calendar events, shop names</td>
+    <td>This is the app. It is visible to the members of your household and to nobody else.</td>
+  </tr>
+  <tr>
+    <td>Photos you attach to grocery items</td>
+    <td>Stored in a private bucket readable only by your household. Taken only when you choose the camera or picker.</td>
+  </tr>
+  <tr>
+    <td>A push notification token</td>
+    <td>Only if you switch notifications on, so we can send your morning chore digest and event reminders. Switching notifications off deletes the token.</td>
+  </tr>
+</table>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>No advertising, and no advertising identifiers.</li>
+  <li>No analytics or behavioural tracking SDKs.</li>
+  <li>No selling or sharing of personal data with third parties.</li>
+  <li>No location collection.</li>
+  <li>No access to your contacts, microphone, or your wider photo library beyond the images you explicitly pick.</li>
+</ul>
+
+<h2>Who processes your data</h2>
+<p>Mazí relies on three service providers, and no others:</p>
+<ul>
+  <li><strong>Supabase</strong> — database, authentication and photo storage.</li>
+  <li><strong>Expo</strong> — delivery of push notifications.</li>
+  <li><strong>Google Firebase Cloud Messaging</strong> — the Android transport that actually delivers a push to your device.</li>
+</ul>
+
+<h2>Who can see your content</h2>
+<p>
+  Only the members of your household. Access is enforced in the database itself
+  through row-level security rules keyed to your household, not merely hidden in
+  the app. Anyone who joins your household using your invite code can see the
+  household's content, so share that code only with people you intend to share
+  with.
+</p>
+
+<h2>Children</h2>
+<p>
+  Mazí is designed for family use and a household may well include children, but
+  accounts are intended to be created by an adult. We do not knowingly collect
+  data from a child who has created an account without a parent's involvement.
+  If you believe that has happened, contact us and we will delete it.
+</p>
+
+<h2>Keeping and deleting your data</h2>
+<p>
+  Your data is kept for as long as your account exists. You can delete your
+  account at any time from <strong>Settings → Delete account</strong> inside the
+  app. See the <a href="./delete-account.html">account deletion page</a> for what
+  is removed and what is kept.
+</p>
+
+<h2>Your rights</h2>
+<p>
+  If you are in the UK or EU, you have the right to access, correct, export or
+  erase your personal data. Deletion is available directly in the app; for
+  anything else, write to us at the address below and we will respond.
+</p>
+
+<h2>Contact</h2>
+<p>
+  <!-- TODO: replace SUPPORT_EMAIL_TBD with the real support address in both
+       this file and delete-account.html before publishing. -->
+  <code>SUPPORT_EMAIL_TBD</code>
+</p>
+
+</body>
+</html>
